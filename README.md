@@ -1,6 +1,6 @@
-# 🎤 WhatsApp Spanish → English Translator
+# 🎤 Universial Language -> Language Translator
 
-Transcribe Spanish WhatsApp voice messages and translate them to English using Hugging Face transformers.
+Transcribe voice messages and translate them to desired language using Hugging Face transformers.
 
 ## ⚡ Quick Start
 
@@ -88,13 +88,13 @@ python tools/run_whatsapp.py --device cpu
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ 🇪🇸 Spanish Transcription                                 ┃
 ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
-│ [Spanish transcription will appear here]                  │
+│ [Original transcription will appear here]                  │
 └────────────────────────────────────────────────────────────┘
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ 🇺🇸 English Translation                                   ┃
 ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
-│ [English translation will appear here]                    │
+│ [Source translation will appear here]                      │
 └────────────────────────────────────────────────────────────┘
 
 ⏱️  Processing time: 4.2s (ASR: 3.8s, Translation: 0.4s)
@@ -116,7 +116,7 @@ The program will warn you if you select high-compute models like `whisper-large-
 - ✅ Handles .ogg and .mp3 formats with spaces in filenames  
 - ✅ Spanish speech recognition using Whisper
 - ✅ Spanish→English translation using MarianMT
-- ✅ Device auto-detection (CUDA/MPS/CPU)
+- ✅ Device auto-detection (CUDA/MPS/CPU)  <-- FALLBACK!
 - ✅ Secure HF token handling
 - ✅ Rich console output with progress indicators
 - ✅ JSON export for programmatic use
