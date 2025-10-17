@@ -16,11 +16,14 @@ Transcribe and translate voice messages using Hugging Face transformers. Support
 
 3. **Run the translator**:
    ```bash
-   # Auto-detect WhatsApp files in /tmp
-   python tools/run_whatsapp.py
+   # Auto-detect audio files in /tmp (recommended)
+   python -m ut_asr_translator
    
    # Or specify a file
-   python tools/run_whatsapp.py --audio "/tmp/WhatsApp Ptt 2025-10-16 at 2.38.41 PM.ogg"
+   python -m ut_asr_translator --audio "/tmp/WhatsApp Ptt 2025-10-16 at 2.38.41 PM.ogg"
+   
+   # Alternative: Use the wrapper script
+   python tools/run_whatsapp.py
    ```
 
 ## 📁 Your Files
@@ -50,26 +53,29 @@ pip install -r requirements.txt
 ## 🚀 Usage Examples
 
 ```bash
-# Basic usage - auto-detects your WhatsApp files
-python tools/run_whatsapp.py
+# Basic usage - auto-detects audio files
+python -m ut_asr_translator
 
 # Verbose output with detailed progress
-python tools/run_whatsapp.py --verbose
+python -m ut_asr_translator --verbose
 
 # Save results to JSON
-python tools/run_whatsapp.py --json-out results.json
+python -m ut_asr_translator --json-out results.json
 
 # Use different models (faster but less accurate)
-python tools/run_whatsapp.py --asr-model openai/whisper-base
+python -m ut_asr_translator --asr-model openai/whisper-base
 
 # Force CPU usage
-python tools/run_whatsapp.py --device cpu
+python -m ut_asr_translator --device cpu
+
+# Alternative: Use the wrapper script (legacy)
+python tools/run_whatsapp.py
 ```
 
 ## 🎯 Expected Output
 
 ```
-🎤 WhatsApp Spanish → English Translator
+🎤 UT ASR Translator - Universal Speech Translation
 
 🖥️  Device: CUDA
    GPU: NVIDIA GeForce RTX 4080
@@ -147,7 +153,7 @@ See `requirements.txt` for complete list. Key dependencies:
 
 ## 🐛 Troubleshooting
 
-**No WhatsApp files found**: Use `--audio` to specify file path manually  
+**No audio files found**: Use `--audio` to specify file path manually
 **ffmpeg not found**: Install with `sudo apt-get install -y ffmpeg`  
 **CUDA errors**: Use `--device cpu` to force CPU usage  
 **Token errors**: Check `HUGGING_FACE_API_KEY` environment variable
