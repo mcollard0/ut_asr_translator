@@ -91,10 +91,10 @@ def backup_project_files( project_root: str = "." ):
     
     # Key files to backup;
     key_files = [
-        "src/wa_asr_translator/config.py",
-        "src/wa_asr_translator/asr.py", 
-        "src/wa_asr_translator/translate.py",
-        "src/wa_asr_translator/cli.py",
+        "src/ut_asr_translator/config.py",
+        "src/ut_asr_translator/asr.py", 
+        "src/ut_asr_translator/translate.py",
+        "src/ut_asr_translator/cli.py",
         "tools/run_whatsapp.py",
         "README.md",
         "docs/architecture.md",

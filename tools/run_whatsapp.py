@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Simple wrapper to run WhatsApp translation with default settings
+Simple wrapper to run speech translation with default settings
 """
 
 import sys
@@ -9,7 +9,7 @@ import os
 # Add src to Python path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from wa_asr_translator.cli import main
+from ut_asr_translator.cli import main
 
 if __name__ == "__main__":
     # Set default HF token if not already set

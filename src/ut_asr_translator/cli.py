@@ -1,5 +1,5 @@
 """
-Command Line Interface for WhatsApp ASR Translator
+Command Line Interface for UT ASR Translator
 Handles user input, compute warnings, and orchestrates the translation pipeline
 """
 
@@ -200,28 +200,28 @@ def save_json_results( results: List[Dict[str, Any]], output_path: str ):
 def create_parser() -> argparse.ArgumentParser:
     """Create CLI argument parser"""
     parser = argparse.ArgumentParser(
-        description="Translate Spanish WhatsApp voice messages to English using Hugging Face models",
+        description="Universal Translator - Speech-to-text and translation utility using Hugging Face models",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Auto-detect WhatsApp files in /tmp
-  python -m wa_asr_translator.cli
+  # Auto-detect audio files in /tmp
+  python -m ut_asr_translator.cli
   
   # Process specific file
-  python -m wa_asr_translator.cli --audio "/tmp/WhatsApp Ptt 2025-10-16 at 2.38.41 PM.ogg"
+  python -m ut_asr_translator.cli --audio "/tmp/audio_file.ogg"
   
-  # Use different models
-  python -m wa_asr_translator.cli --asr-model openai/whisper-base --mt-model Helsinki-NLP/opus-mt-es-en
+  # Custom models
+  python -m ut_asr_translator.cli --asr-model openai/whisper-base --mt-model Helsinki-NLP/opus-mt-es-en
   
   # Force CPU usage
-  python -m wa_asr_translator.cli --device cpu
+  python -m ut_asr_translator.cli --device cpu
         """
     );
     
     parser.add_argument(
         "--audio", "-a",
         action="append",
-        help="Audio file path (can be used multiple times). If not specified, auto-detects WhatsApp files in /tmp"
+        help="Audio file path (can be used multiple times). If not specified, auto-detects audio files in /tmp"
     );
     
     parser.add_argument(
@@ -293,7 +293,7 @@ def main():
     );
     
     if not args.quiet:
-        console.print( "[bold blue]🎤 WhatsApp Spanish → English Translator[/bold blue]\n" );
+        console.print( "[bold blue]🎤 UT ASR Translator - Universal Speech Translation[/bold blue]\n" );
         print_device_info();
         console.print();
         print_model_info( config );

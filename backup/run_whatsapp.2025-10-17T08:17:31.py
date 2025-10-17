@@ -9,7 +9,7 @@ import os
 # Add src to Python path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from wa_asr_translator.cli import main
+from ut_asr_translator.cli import main
 
 if __name__ == "__main__":
     # Set default HF token if not already set

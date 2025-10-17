@@ -1,5 +1,5 @@
 """
-Configuration module for WhatsApp ASR Translator
+Configuration module for UT ASR Translator
 Handles device detection, model defaults, and HF token management
 """
 

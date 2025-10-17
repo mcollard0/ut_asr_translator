@@ -1,8 +1,8 @@
-# WhatsApp ASR Translator Architecture
+# UT ASR Translator Architecture
 
-## Summary
+## Overview
 
-The WhatsApp ASR Translator is a Python application that transcribes Spanish WhatsApp voice messages and translates them to English using Hugging Face transformers. It provides a complete pipeline from audio preprocessing to final translation with support for multiple audio formats and compute optimization warnings.
+The UT ASR Translator is a universal speech translation application that transcribes and translates voice messages using Hugging Face transformers. It provides a complete pipeline from audio preprocessing to final translation with support for multiple audio formats and compute optimization warnings.
 
 ## CLI Interface
 
@@ -141,8 +141,8 @@ See `requirements.txt` for complete list:
 ## File Organization
 
 ```
-wa-asr-translator/
-├── src/wa_asr_translator/        # Main package
+ut-asr-translator/
+├── src/ut_asr_translator/        # Main package
 │   ├── __init__.py              # Package initialization
 │   ├── __main__.py              # Entry point for -m execution
 │   ├── cli.py                   # Command line interface

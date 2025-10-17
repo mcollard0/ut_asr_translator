@@ -1,6 +1,6 @@
-# 🎤 WhatsApp Spanish → English Translator
+# 🎤 UT ASR Translator - Universal Speech Translation
 
-Transcribe Spanish WhatsApp voice messages and translate them to English using Hugging Face transformers.
+Transcribe and translate voice messages using Hugging Face transformers. Supports multiple languages and audio formats.
 
 ## ⚡ Quick Start
 
@@ -143,7 +143,7 @@ See `requirements.txt` for complete list. Key dependencies:
 
 - `docs/architecture.md` - Complete technical documentation
 - `tools/run_whatsapp.py` - Simple execution wrapper
-- `src/wa_asr_translator/` - Full source code
+- `src/ut_asr_translator/` - Full source code
 
 ## 🐛 Troubleshooting
 

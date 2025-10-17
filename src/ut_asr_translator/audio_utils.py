@@ -1,5 +1,5 @@
 """
-Audio utilities for WhatsApp voice message processing
+Audio utilities for voice message processing
 Handles file validation, format conversion, and audio preprocessing
 """
 

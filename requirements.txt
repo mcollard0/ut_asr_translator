@@ -1,4 +1,4 @@
-# WhatsApp Audio Speech-to-Text and Translation Requirements
+# UT ASR Translator - Audio Speech-to-Text and Translation Requirements
 # Core ML libraries
 transformers>=4.44.0,<5.0.0
 torch>=2.2.0
